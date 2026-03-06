@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sorriso Perfeito</title>
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+
+<body>
+    <header>
+        <div id="logo">
+            <span id="logoIcon"><img src="assets/img/logoIcon.png" alt=""></span>
+            <div id="logoText">
+                <span id="logoT1">Sorriso Perfeito</span>
+                <span id="logoT2">PROTEGENDO SEUS DENTES</span>
+            </div>
+        </div>
+        <div id="weatherShow">
+            <img id="weatherIcon" alt="clima">
+            <div id="weatherInfo">
+                <span id="temp">--°C</span>
+                <span id="weatherCity">Sapucaia do Sul</span>
+            </div>
+        </div>
+        <nav>
+            <ul id="navBar">
+                <li><a href="#services">Serviços</a></li>
+                <li><a href="#about">Sobre Nós</a></li>
+                <li><a href="#avaliacao">Avaliações</a></li>
+                <li><a href="#contact">Entre em Contato</a></li>
+                <button id="toggleTheme">🌙</button>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div id="landing">
+            <div id="txtimg">
+                <div id="txt1">
+                    <h1>Bem-vindo!</h1>
+                    <p>Seja bem-vindo à Clínica Sorriso Perfeito! Aqui, cada paciente é recebido com carinho, atenção e
+                        profissionalismo. Nossa equipe especializada oferece tratamentos modernos, seguros e
+                        personalizados para cuidar da sua saúde bucal e valorizar seu sorriso. Trabalhamos com
+                        tecnologia de ponta em um ambiente confortável e acolhedor, pensado para toda a família. Agende
+                        sua consulta e descubra o prazer de sorrir com confiança todos os dias. Estamos prontos para
+                        atendê-lo hoje.
+                    </p>
+                </div>
+                <div>
+                    <img id="mulher" src="assets/img/mulherFeliz.png" alt="">
+                </div>
+            </div>
+            <a href="#contact" class="btn" id="btn1">Agende uma consulta</a>
+        </div>
+
+        <div id="services">
+            <div id="servicesHd">
+                <span>Nossos serviços</span>
+                <p>Oferecemos tratamentos completos para cuidar do seu sorriso</p>
+            </div>
+            <div class="services-grid" id="servicesGrid"></div>
+        </div>
+
+        <div id="about">
+            <div id="aboutHd">
+                <span>Sobre Nós</span>
+                <p>Excelência em cuidados odontológicos há mais de 1 semana</p>
+            </div>
+            <div class="about-grid" id="aboutGrid"></div>
+
+        </div>
+
+        <div id="avaliacao">
+            <div id="avaHd">
+                <span>Depoimentos</span>
+                <p>Veja o que nossos pacientes dizem sobre nós</p>
+            </div>
+            <div class="avaliacao-grid" id="avaliacaoGrid"></div>
+        </div>
+        <div id="contact">
+            <div id="contactsHd">
+                <span>Entre em Contato</span>
+                <p>Agende sua consulta ou tire suas dúvidas</p>
+            </div>
+            <div id="contactInfo">
+                <p>📌<strong>Endereço:</strong> Rua do xiru, 123 - Centro, Sapucaia do Sul</p>
+                <p>📩<strong>Telefone:</strong> (51) 1234-5678</p>
+                <p>📞<strong>Email:</strong> sorrisoperfeito@gmail.com</p>
+                <p>🕒<strong>Horário de Atendimento:</strong> Segunda a Sexta: 8h às 19h. Sábado: 8h às 13h</p>
+            </div>
+
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d916.8677887697303!2d-51.13949531495464!3d-29.817174022221337!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95196f2a593c6151%3A0xee0be7c4a3eba933!2sCol%C3%A9gio%20ULBRA%20S%C3%A3o%20Lucas!5e0!3m2!1spt-BR!2sbr!4v1772397481215!5m2!1spt-BR!2sbr"
+                width="70%" height="400" style="border:0;">
+            </iframe>
+            <div id="contactMsg">
+                <form id="contactForm">
+                    <span>Agende sua consulta</span>
+                    <input type="text" id="name" name="name" placeholder="Seu nome" required>
+                    <input type="tel" id="telefone" name="telefone" placeholder="Seu telefone" required>
+                    <input type="email" id="email" name="email" placeholder="Seu email" required>
+                    <input type="number" id="CEP" name="CEP" placeholder="Seu CEP" required>
+                    <input type="endereco" id="endereco" name="endereco" placeholder="Seu Endereço:" readonly>
+                    <textarea id="message" name="message" placeholder="Sua mensagem" required></textarea>
+                    <button id="button" type="submit">Enviar Mensagem</button>
+                </form>
+                
+            </div>
+            <div>
+
+                <button id="toTop">↑</button>
+    </main>
+    <footer>
+        <div id="footerTxt">
+            <div id="logoTxt">
+                <span id="T1">Sorriso Perfeito</span>
+                <span id="T2">Protegendo seus Dentes</span>
+            </div>
+            <p>© 2026 Sorriso Perfeito. Todos os direitos reservados.</p>
+
+        </div>
+    </footer>
+    <script src="script/main.js"></script>
+    <script src="script/services.js"></script>
+    <script src="script/about.js"></script>
+    <script src="script/avaliacao.js"></script>
+    <script src="script/viaCEP.js"></script>
+    <script src="script/darkmode.js"></script>
+    <script src="script/temperaturaAPI.js"></script>  
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script src="script/email.js"></script>
+</body>
+
+</html>

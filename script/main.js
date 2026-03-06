@@ -29,7 +29,7 @@ btn1.addEventListener('click', (e) => {
     contactSection.scrollIntoView({ behavior: 'smooth' });
   }
 });
-
+//PWA
 if ('serviceWorker' in navigator) {
       window.addEventListener('load', () => {
 

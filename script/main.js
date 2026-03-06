@@ -29,3 +29,12 @@ btn1.addEventListener('click', (e) => {
     contactSection.scrollIntoView({ behavior: 'smooth' });
   }
 });
+
+if ('serviceWorker' in navigator) {
+      window.addEventListener('load', () => {
+
+        navigator.serviceWorker.register('./pwabuilder-sw.js')
+          .then(reg => console.log('Service Worker registrado!', reg))
+          .catch(err => console.error('Falha ao registrar:', err));
+      });
+    }

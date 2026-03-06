@@ -69,6 +69,10 @@ SorrisoPerfeito/
 ├── styles/
 │   └── style.css               # Estilos globais, componentes, dark mode e media queries
 │
+├── pwabuilder-sw.js
+│
+├── manifest.json
+│
 ├── script/
 │   ├── main.js                 # Scroll suave, navegação e botão "voltar ao topo"
 │   ├── services.js             # Renderização dinâmica dos cards de serviços

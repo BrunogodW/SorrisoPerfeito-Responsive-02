@@ -13,7 +13,7 @@ const avaliacoes = [
     },
     {
         stars: "⭐⭐⭐⭐⭐",
-        author: "Jacinto Pinto",
+        author: "Não Gusangue",
         description: "Minha filha adora vir nas consultas. A odontopediatra é muito carinhosa e paciente.",
         foto: "assets/img/Gusang.png"
     }
